@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import {HashRouter,BrowserRouter,Route,Switch} from "react-router-dom"
 
 import Login from "./pages/login/login"
-import Admin from "./pages/login/Admin"
+import Admin from "./pages/admin/admin"
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { from } from 'rxjs';
+// import { from } from 'rxjs';
 
 export default class App extends Component {
   render() {
