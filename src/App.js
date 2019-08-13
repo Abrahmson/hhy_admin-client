@@ -11,12 +11,12 @@ import './App.css';
 export default class App extends Component {
   render() {
     return (
-     <HashRouter>
+     <BrowserRouter>
        <Switch>
-         <Route path="/login" Component={Login}></Route>
-         <Route path="/admin" Component={Admin}></Route>
+         <Route path="/admin" component={Admin}></Route>
+         <Route path="/" component={Login}></Route>
        </Switch>
-     </HashRouter>
+     </BrowserRouter>
     )
   }
 }
