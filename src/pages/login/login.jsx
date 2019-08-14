@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Form, Icon, Input, Button } from 'antd';
 
 import './login.less'
-import logo from './images/logo.png'
+import logo from '../../assets/images/logo.png'
 
 
  class Login extends Component {  
