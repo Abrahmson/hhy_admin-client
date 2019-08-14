@@ -1,5 +1,52 @@
 {
-    "editor.fontSize": 16,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.fontSize": 20,
     "files.autoSave": "onFocusChange",
-    "emmet.triggerExpansionOnTab": true
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "eslint.enable": false,
+    "window.zoomLevel": 2,
+    "fileheader.Author": "xfzhang",
+    "fileheader.LastModifiedBy": "xfzhang",
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "editor.tabSize": 2,
+    "workbench.startupEditor": "newUntitledFile",
+    "git.autofetch": true,
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+
+    },
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "editor.minimap.enabled": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\system32\\cmd.exe",
+    "breadcrumbs.enabled": true,
+    "vetur.validation.template": false,
+    "workbench.list.openMode": "doubleClick",
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "git.enableSmartCommit": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "path-intellisense.showHiddenFiles": true,
+    "search.followSymlinks": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "liveServer.settings.donotShowInfoMsg": true
 }

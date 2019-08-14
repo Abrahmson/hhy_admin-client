@@ -15,6 +15,8 @@ import Pie from '../charts/pie'
 
 const { Footer, Sider, Content } = Layout;
 
+// admin一级路由组件
+
 export default class Admin extends Component {
     render() {
         return (
