@@ -49,6 +49,39 @@ export const reqLogin = (username,password) => {
     })
 }
 
+//6. 获取分类列表
+/*### 请求URL：
+	http://localhost:5000/manage/category/list
+
+### 请求方式：
+	GET
+
+### 参数类型: 
+	无
+
+### 返回示例：
+      {
+        "status": 0,
+        "data": [
+          {
+            "_id": "5c2ed631f352726338607046",
+            "name": "分类001"
+          },
+          {
+            "_id": "5c2ed647f352726338607047",
+            "name": "分类2"
+          },
+          {
+            "_id": "5c2ed64cf352726338607048",
+            "name": "1分类3"
+          }
+        ]
+      } 
+      */
+
+export const reqCategorys = ()=>ajax.get('/manage/category/list')
+
+
 //21. 获取天气信息(支持jsonp)
 /*
 ### 请求URL：

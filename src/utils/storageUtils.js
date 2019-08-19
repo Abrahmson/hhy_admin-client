@@ -5,3 +5,5 @@ export const saveUser = (user) => localStorage.setItem("user_key", JSON.stringif
 
 //读取user
 export const getUser = ()=> JSON.parse(localStorage.getItem('user_key' || '{}'))
+
+export const removeUser = ()=>{localStorage.removeItem("user_key")}

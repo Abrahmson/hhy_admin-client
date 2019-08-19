@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import {withRouter} from 'react-router-dom';
+import {withRouter,Redirect} from 'react-router-dom';
 import moment from "moment";
+import {Modal} from 'antd'
 
 import memoryUtils from '../../utils/memoryUtils'
 import menuList from '../../config/memuConfig'
 import { reqWeather } from '../../api'
+import LinkButton from '../link-button/link-button'
+import { removeUser} from '../../utils/storageUtils';
 import './index.less';
 
 class Header extends Component {
@@ -54,6 +57,20 @@ class Header extends Component {
     })
   }
 
+  handleClick = ()=>{
+    Modal.confirm({
+      title:'你确认退出吗？',
+      onOk:()=>{
+        //删除内存信息
+        removeUser()
+        //删除内存中的信息
+        memoryUtils.user = {}
+        //跳转到登入页面
+        this.props.history.replace('/login')
+      }
+    })
+    
+  }
 
   render() {
     let {currentTime} = this.state
@@ -64,7 +81,7 @@ class Header extends Component {
       <div className="header">
       <div className="header-top">
           欢迎<span className="admin-name"> {user.username} </span>
-          <a>退出</a>
+          <LinkButton onClick={this.handleClick}>退出</LinkButton>
         </div>
         <div className="header-bottom">
           <div className="header-bottom-left">
